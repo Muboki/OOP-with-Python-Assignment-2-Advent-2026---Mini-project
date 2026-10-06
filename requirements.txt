@@ -1,0 +1,7 @@
+# Libraries for calculations, charts, tests and notebooks.
+numpy
+scipy
+matplotlib
+pytest
+jupyter
+ipykernel
