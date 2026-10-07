@@ -98,3 +98,32 @@ and market assumptions limit practical use.
 
 Validation: three unit tests passed, and the notebook completed
 Restart & Run All successfully.
+
+## Mini-Project 4: Rainfall Pattern & Crop Suitability Analyser
+
+Compares illustrative monthly rainfall for Kampala, Gulu and Mbarara
+and applies rainfall-based screening rules for maize, beans and sorghum.
+
+- Notebook: notebooks/project4_rainfall.ipynb
+- Reusable classes: src/rainfall.py
+- Tests: tests/test_rainfall.py
+
+Run the notebook from top to bottom. It includes rainfall summaries,
+cosine similarity, Pearson correlation and Euclidean distance matrices,
+automatic peak detection, a rainfall chart and a crop screening heatmap.
+
+Kampala has the highest annual rainfall in the dataset at 1,600 mm.
+Gulu has the greatest variation between months, with a CV of 61.42%.
+Peak detection does not fully match broad climate patterns, illustrating
+the limitations of treating local peaks as distinct rainy seasons.
+
+Crop thresholds are simplified monthly estimates derived from cited
+FAO seasonal water requirements. They are screening assumptions,
+not validated planting or waterlogging thresholds. A short advisory
+discusses beans in Mbarara.
+
+The data are synthetic. The optional extension using at least ten
+years of real rainfall data was not undertaken.
+
+Validation: four unit tests showed passing results, and the notebook
+completed Restart & Run All successfully.
