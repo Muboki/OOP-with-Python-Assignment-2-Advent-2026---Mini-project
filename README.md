@@ -38,6 +38,9 @@ uncertainty. Classroom estimates do not account for existing shortages.
 Validation: three unit tests passed, and the notebook completed
 Restart & Run All successfully.
 
+
+
+
 ## Mini-Project 2: Solar Micro-Grid Dispatch Planner
 
 Models solar and battery usage for a rural health centre in Kasese.
@@ -62,11 +65,17 @@ The extension explores demand sensitivity using 1,000 simulated scenarios.
 Validation: three unit tests passed, and the notebook completed
 Restart & Run All successfully.
 
+
+
+
 ## AI Assistance
 
 I used ChatGPT for step-by-step guidance on code structure, input
 validation, testing and interpretation. I ran the code and tests locally
 and checked the resulting outputs.
+
+
+
 
 ## Mini-Project 3: Lake Victoria Fish Stock & Export Risk Model
 
@@ -99,6 +108,9 @@ and market assumptions limit practical use.
 Validation: three unit tests passed, and the notebook completed
 Restart & Run All successfully.
 
+
+
+
 ## Mini-Project 4: Rainfall Pattern & Crop Suitability Analyser
 
 Compares illustrative monthly rainfall for Kampala, Gulu and Mbarara
@@ -127,3 +139,40 @@ years of real rainfall data was not undertaken.
 
 Validation: four unit tests showed passing results, and the notebook
 completed Restart & Run All successfully.
+
+
+
+
+## Mini-Project 5: Taxi Route Revenue, Pricing & Fleet Planner
+
+Analyses passenger demand and gross fare revenue for the
+Kampala–Ntinda, Kampala–Entebbe and Kampala–Mukono routes.
+
+- Notebook: notebooks/project5_taxi.ipynb
+- Reusable classes and evaluation function: src/taxi.py
+- Tests: tests/test_taxi.py
+
+Run the notebook from top to bottom. It includes passenger statistics,
+fare equilibrium, walk-forward forecasting, revenue charts and
+day 11 fleet estimates.
+
+The illustrative Ntinda equilibrium fare is UGX 2,200, compared with
+the current UGX 2,000 fare.
+
+Exponential smoothing with alpha = 1.0 achieved the lowest validation
+MAE for all routes. Day 11 revenue forecasts are UGX 90,000 for Ntinda,
+UGX 320,000 for Entebbe and UGX 150,000 for Mukono.
+
+Each route requires one vehicle under the assumed daily capacity
+of 112 passenger journeys, after applying a 15% demand buffer.
+
+The extension generates 60 days with weekly seasonality using seed 2026.
+Seasonal naive achieved an MAE of 3.00 passengers, compared with
+13.41 for the three-day moving average.
+
+Results are limited by the short original dataset, shared tuning and
+model-selection periods, and simplified operating assumptions.
+Revenue excludes costs.
+
+Validation: five unit tests passed, and the notebook completed
+Restart & Run All successfully.
