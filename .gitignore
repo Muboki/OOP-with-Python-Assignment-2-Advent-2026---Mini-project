@@ -4,3 +4,7 @@ __pycache__/
 
 # Ignore temporary notebook checkpoints.
 .ipynb_checkpoints/
+
+# Ignore the local Python environment and pytest cache.
+.venv/
+.pytest_cache/

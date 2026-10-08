@@ -1,3 +1,36 @@
+## Setup and running the projects
+
+Requirements: Python, Git, and VS Code with the Python and Jupyter
+extensions.
+
+Clone the repository:
+
+```powershell
+git clone https://github.com/Muboki/OOP-with-Python-Assignment-2-Advent-2026---Mini-project.git
+cd OOP-with-Python-Assignment-2-Advent-2026---Mini-project
+```
+
+Create a virtual environment and install dependencies:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+Open the repository folder in VS Code. Open a notebook from `notebooks/`
+and select `.venv` as its Python kernel. Choose Restart, then Run All.
+
+Run all unit tests from the repository's main folder:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest tests -q
+```
+
+The five projects contain 18 unit tests, all passing in the development
+environment. Each notebook was also checked using Restart & Run All.
+
+
+
 ## Mini-Project 1: UBOS District Population Forecaster
 
 Forecasts district populations for 2025–2029 to estimate additional
